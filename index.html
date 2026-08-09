@@ -616,7 +616,856 @@ function toggle(btn){
 
 </body>
 </html>
-  
+  ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JEE/KCET Exam Mode</title>
+
+<style>
+*{box-sizing:border-box}
+
+body{
+ margin:0;
+ padding:15px;
+ font-family:Arial,sans-serif;
+ background:#f3f6fa;
+ color:#222
+}
+
+h1{
+ text-align:center;
+ color:#17365d;
+ margin:8px
+}
+
+.sub{
+ text-align:center;
+ color:#666;
+ margin-bottom:15px
+}
+
+.topbar{
+ max-width:1000px;
+ margin:auto;
+ background:#17365d;
+ color:white;
+ padding:12px;
+ border-radius:8px;
+ display:flex;
+ justify-content:space-between;
+ gap:10px;
+ flex-wrap:wrap;
+ font-weight:bold
+}
+
+#timer{
+ color:#ffeb3b;
+ font-size:20px
+}
+
+.question{
+ max-width:1000px;
+ margin:15px auto;
+ background:white;
+ border-radius:10px;
+ overflow:hidden;
+ box-shadow:0 2px 7px #ccc
+}
+
+.qhead{
+ width:100%;
+ background:#b30000;
+ color:white;
+ padding:14px;
+ text-align:left;
+ font-size:16px;
+ border:0;
+ font-weight:bold
+}
+
+.qbody{
+ padding:15px;
+ line-height:1.6
+}
+
+.option{
+ display:block;
+ margin:8px 0;
+ padding:9px;
+ background:white;
+ border:1px solid #ccc;
+ border-radius:6px;
+ cursor:pointer
+}
+
+.option:hover{
+ background:#f2f2f2
+}
+
+.option input{
+ margin-right:8px
+}
+
+.navigation{
+ max-width:1000px;
+ margin:15px auto;
+ display:flex;
+ flex-wrap:wrap;
+ gap:6px
+}
+
+.navigation button{
+ width:42px;
+ height:42px;
+ border:0;
+ border-radius:6px;
+ background:#ddd;
+ cursor:pointer;
+ font-weight:bold
+}
+
+.navigation button.answered{
+ background:#25833b;
+ color:white
+}
+
+.actions{
+ max-width:1000px;
+ margin:15px auto;
+ display:flex;
+ gap:8px
+}
+
+.actions button{
+ flex:1;
+ padding:12px;
+ border:0;
+ border-radius:7px;
+ color:white;
+ font-weight:bold;
+ cursor:pointer
+}
+
+#prev{background:#555}
+#next{background:#17365d}
+#submit{background:#b30000}
+
+.solution{
+ display:none;
+ margin-top:12px;
+ padding:12px;
+ background:#eef7ee;
+ border-left:4px solid #25833b
+}
+
+.solution.show{
+ display:block
+}
+
+.answer{
+ background:#fff5cf;
+ padding:9px;
+ border-left:4px solid #d49b00;
+ font-weight:bold
+}
+
+.formula{
+ background:#f1f4f7;
+ padding:7px 10px;
+ margin:5px 0;
+ overflow-x:auto
+}
+
+#result{
+ display:none;
+ max-width:1000px;
+ margin:20px auto;
+ padding:20px;
+ background:white;
+ border-radius:10px;
+ box-shadow:0 2px 7px #ccc;
+ text-align:center
+}
+
+.score{
+ font-size:30px;
+ color:#17365d;
+ font-weight:bold
+}
+
+.resultBox{
+ margin:8px;
+ padding:10px;
+ border-radius:6px;
+ background:#f1f4f7
+}
+
+#restart{
+ background:#17365d;
+ color:white;
+ padding:12px 25px;
+ border:0;
+ border-radius:7px;
+ cursor:pointer;
+ font-weight:bold
+}
+
+@media(max-width:600px){
+ body{padding:8px}
+
+ .topbar{
+  font-size:14px
+ }
+
+ .actions button{
+  font-size:13px
+ }
+}
+</style>
+</head>
+
+<body>
+
+<h1>📘 JEE / KCET MOCK TEST</h1>
+
+<div class="sub">
+Relations & Functions • Exam Mode
+</div>
+
+<div class="topbar">
+ <span>Questions: <span id="total">8</span></span>
+ <span>Attempted: <span id="attempted">0</span></span>
+ <span>Score: <span id="liveScore">0</span></span>
+ <span>⏱️ <span id="timer">30:00</span></span>
+</div>
+
+
+<div class="navigation" id="navigation"></div>
+
+<div id="test">
+
+
+<!-- Q1 -->
+<div class="question" data-answer="1,3">
+
+<div class="qhead">
+Q1. Let f(x) = [log(sec x + tan x)]³. Which statements are true?
+</div>
+
+<div class="qbody">
+
+<label class="option">
+<input type="checkbox" value="1">
+(1) f(x) is an odd function
+</label>
+
+<label class="option">
+<input type="checkbox" value="2">
+(2) f(x) is one-one
+</label>
+
+<label class="option">
+<input type="checkbox" value="3">
+(3) f(x) is onto
+</label>
+
+<label class="option">
+<input type="checkbox" value="4">
+(4) f(x) is even
+</label>
+
+<div class="solution">
+<div class="answer">Answer: (1), (3)</div>
+
+<div class="formula">
+sec(-x)+tan(-x)
+= 1/(sec x+tan x)
+</div>
+
+Therefore
+
+<div class="formula">
+log(sec(-x)+tan(-x))
+= -log(sec x+tan x)
+</div>
+
+Hence
+
+<div class="formula">
+f(-x)=-f(x)
+</div>
+
+So f is odd.
+
+</div>
+
+</div>
+</div>
+
+
+<!-- Q2 -->
+<div class="question" data-answer="">
+
+<div class="qhead">
+Q2. Composition of functions — original question contains OCR errors.
+</div>
+
+<div class="qbody">
+
+<label class="option">
+<input type="checkbox" value="1">
+(1) Range of f ...
+</label>
+
+<label class="option">
+<input type="checkbox" value="2">
+(2) Range of fog ...
+</label>
+
+<label class="option">
+<input type="checkbox" value="3">
+(3) Limit expression ...
+</label>
+
+<label class="option">
+<input type="checkbox" value="4">
+(4) Equation condition ...
+</label>
+
+<div class="solution">
+<div class="answer">
+Original photograph required for exact solution.
+</div>
+</div>
+
+</div>
+</div>
+
+
+<!-- Q3 -->
+<div class="question" data-answer="1,4">
+
+<div class="qhead">
+Q3. Let f:N→Z and g:Z→N be defined as given in the question.
+Which statements are true?
+</div>
+
+<div class="qbody">
+
+<label class="option">
+<input type="checkbox" value="1">
+(1) gf is not one-one and gf is not onto
+</label>
+
+<label class="option">
+<input type="checkbox" value="2">
+(2) fg is not one-one but fg is onto
+</label>
+
+<label class="option">
+<input type="checkbox" value="3">
+(3) g is one-one and onto
+</label>
+
+<label class="option">
+<input type="checkbox" value="4">
+(4) f is not one-one but f is onto
+</label>
+
+<div class="solution">
+<div class="answer">Answer: (1), (4)</div>
+
+<div class="formula">
+f(1)=f(2)=1
+</div>
+
+Therefore f is not one-one.
+
+Its range is Z, so f is onto.
+
+</div>
+
+</div>
+</div>
+
+
+<!-- Q4 -->
+<div class="question" data-answer="numeric:19.5">
+
+<div class="qhead">
+Q4. If f(x)=4ˣ/(4ˣ+2), find
+f(1/40)+f(2/40)+...+f(39/40).
+</div>
+
+<div class="qbody">
+
+<input
+ type="number"
+ step="0.01"
+ id="numeric4"
+ placeholder="Enter numerical answer"
+ style="padding:10px;width:100%;border:1px solid #ccc;border-radius:6px"
+>
+
+<div class="solution">
+<div class="answer">Answer: 39/2 = 19.5</div>
+
+<div class="formula">
+f(x)+f(1-x)=1
+</div>
+
+There are 19 pairs and
+
+<div class="formula">
+f(1/2)=1/2
+</div>
+
+Therefore
+
+<div class="formula">
+Sum = 19 + 1/2 = 19.5
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- Q5 -->
+<div class="question" data-answer="">
+
+<div class="qhead">
+Q5. Additive and exponential functional equation question.
+</div>
+
+<div class="qbody">
+
+<p>
+The supplied OCR text does not contain the complete expression to be
+evaluated.
+</p>
+
+<div class="solution">
+<div class="answer">
+Original photograph required for exact answer.
+</div>
+</div>
+
+</div>
+</div>
+
+
+<!-- Q6 -->
+<div class="question" data-answer="18564">
+
+<div class="qhead">
+Q6. Let S={1,2,3,4,5,6}. Count relations R having exactly 6 elements
+with |a-b|≥2 for every (a,b)∈R.
+</div>
+
+<div class="qbody">
+
+<input
+ type="number"
+ id="numeric6"
+ placeholder="Enter answer"
+ style="padding:10px;width:100%;border:1px solid #ccc;border-radius:6px"
+>
+
+<div class="solution">
+
+<div class="answer">
+Answer: 18,564
+</div>
+
+Allowed ordered pairs:
+
+<div class="formula">
+4+3+2+2+3+4=18
+</div>
+
+Therefore
+
+<div class="formula">
+n(X)=C(18,6)=18,564
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- Q7 -->
+<div class="question" data-answer="24">
+
+<div class="qhead">
+Q7. If n(Y)+n(Z)=k², find k.
+</div>
+
+<div class="qbody">
+
+<input
+ type="number"
+ id="numeric7"
+ placeholder="Enter k"
+ style="padding:10px;width:100%;border:1px solid #ccc;border-radius:6px"
+>
+
+<div class="solution">
+
+<div class="answer">
+Answer: k = 24
+</div>
+
+<div class="formula">
+n(Y)=0
+</div>
+
+<div class="formula">
+n(Z)=4×3×2×2×3×4=576
+</div>
+
+Therefore
+
+<div class="formula">
+k²=576
+</div>
+
+<div class="formula">
+k=24
+</div>
+
+</div>
+
+</div>
+</div>
+
+
+<!-- Q8 -->
+<div class="question" data-answer="105">
+
+<div class="qhead">
+Q8. How many reflexive and symmetric relations on a 6-element set contain
+exactly 10 ordered pairs?
+</div>
+
+<div class="qbody">
+
+<input
+ type="number"
+ id="numeric8"
+ placeholder="Enter answer"
+ style="padding:10px;width:100%;border:1px solid #ccc;border-radius:6px"
+>
+
+<div class="solution">
+
+<div class="answer">
+Answer: 105
+</div>
+
+Six diagonal pairs are compulsory.
+
+Remaining pairs:
+
+<div class="formula">
+10-6=4
+</div>
+
+Since the relation is symmetric, these form 2 unordered pairs.
+
+There are
+
+<div class="formula">
+C(6,2)=15
+</div>
+
+possible unordered pairs.
+
+Hence
+
+<div class="formula">
+C(15,2)=105
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+
+
+<div class="actions">
+<button id="prev" onclick="previousQuestion()">← Previous</button>
+<button id="next" onclick="nextQuestion()">Next →</button>
+<button id="submit" onclick="submitTest()">Submit Test</button>
+</div>
+
+
+<div id="result">
+
+<h2>🏆 Test Result</h2>
+
+<div class="score" id="finalScore">0</div>
+
+<div class="resultBox">
+Correct: <span id="correct">0</span>
+</div>
+
+<div class="resultBox">
+Wrong: <span id="wrong">0</span>
+</div>
+
+<div class="resultBox">
+Unattempted: <span id="unattempted">0</span>
+</div>
+
+<div class="resultBox">
+Accuracy: <span id="accuracy">0%</span>
+</div>
+
+<p>
+<strong>Marking Scheme:</strong><br>
+Correct = +4 &nbsp; | &nbsp;
+Wrong = −1 &nbsp; | &nbsp;
+Unattempted = 0
+</p>
+
+<button id="restart" onclick="location.reload()">
+Restart Test
+</button>
+
+</div>
+
+
+<script>
+
+let questions=[...document.querySelectorAll(".question")];
+let current=0;
+let submitted=false;
+
+const nav=document.getElementById("navigation");
+
+questions.forEach((q,i)=>{
+ let b=document.createElement("button");
+ b.innerText=i+1;
+ b.onclick=()=>showQuestion(i);
+ nav.appendChild(b);
+});
+
+function showQuestion(i){
+ current=i;
+
+ questions.forEach((q,index)=>{
+  q.style.display=index===i?"block":"none";
+ });
+
+ updateNav();
+}
+
+function updateNav(){
+
+ let attempted=0;
+
+ questions.forEach((q,i)=>{
+
+  let inputs=q.querySelectorAll("input[type=checkbox]");
+
+  let hasCheck=[...inputs].some(x=>x.checked);
+
+  let num=q.querySelector("input[type=number]");
+
+  let hasNum=num && num.value!=="";
+
+  if(hasCheck || hasNum){
+   attempted++;
+   nav.children[i].classList.add("answered");
+  }else{
+   nav.children[i].classList.remove("answered");
+  }
+
+ });
+
+ document.getElementById("attempted").innerText=attempted;
+}
+
+function nextQuestion(){
+
+ if(current<questions.length-1){
+  showQuestion(current+1);
+ }
+
+}
+
+function previousQuestion(){
+
+ if(current>0){
+  showQuestion(current-1);
+ }
+
+}
+
+document.addEventListener("change",updateNav);
+document.addEventListener("input",updateNav);
+
+
+function checkMCQ(q){
+
+ let answer=q.dataset.answer;
+
+ if(!answer) return null;
+
+ let correct=answer.split(",");
+
+ let selected=[...q.querySelectorAll(
+  'input[type="checkbox"]:checked'
+ )].map(x=>x.value);
+
+ selected.sort();
+ correct.sort();
+
+ return selected.join(",")===correct.join(",");
+}
+
+
+function checkNumeric(q){
+
+ let answer=q.dataset.answer;
+
+ if(!answer || !answer.startsWith("numeric:"))
+  return null;
+
+ let correct=parseFloat(answer.split(":")[1]);
+
+ let input=q.querySelector('input[type="number"]');
+
+ if(!input || input.value==="")
+  return null;
+
+ let user=parseFloat(input.value);
+
+ return Math.abs(user-correct)<0.01;
+}
+
+
+function submitTest(){
+
+ if(submitted) return;
+
+ if(!confirm("Submit the test? You cannot change answers after submission."))
+  return;
+
+ submitted=true;
+
+ clearInterval(timerInterval);
+
+ let correct=0;
+ let wrong=0;
+ let unattempted=0;
+
+ questions.forEach(q=>{
+
+  let resultMCQ=checkMCQ(q);
+  let resultNum=checkNumeric(q);
+
+  let result=resultMCQ!==null ? resultMCQ : resultNum;
+
+  let hasAnswer=false;
+
+  let checks=q.querySelectorAll(
+   'input[type="checkbox"]:checked'
+  );
+
+  if(checks.length>0) hasAnswer=true;
+
+  let num=q.querySelector('input[type="number"]');
+
+  if(num && num.value!=="") hasAnswer=true;
+
+  if(result===true){
+   correct++;
+  }
+  else if(result===false){
+   wrong++;
+  }
+  else{
+   unattempted++;
+  }
+
+ });
+
+ let score=(correct*4)-(wrong*1);
+
+ let attempted=correct+wrong;
+
+ let accuracy=attempted?
+ Math.round(correct/attempted*100):0;
+
+ document.getElementById("correct").innerText=correct;
+ document.getElementById("wrong").innerText=wrong;
+ document.getElementById("unattempted").innerText=unattempted;
+ document.getElementById("accuracy").innerText=accuracy+"%";
+ document.getElementById("finalScore").innerText=score;
+
+ document.getElementById("result").style.display="block";
+
+ document.getElementById("result").scrollIntoView({
+  behavior:"smooth"
+ });
+
+ document.querySelectorAll(".solution")
+  .forEach(x=>x.classList.add("show"));
+
+ document.querySelectorAll("input")
+  .forEach(x=>x.disabled=true);
+
+ document.getElementById("submit").disabled=true;
+
+}
+
+
+let time=30*60;
+
+const timerInterval=setInterval(()=>{
+
+ if(submitted) return;
+
+ let min=Math.floor(time/60);
+ let sec=time%60;
+
+ document.getElementById("timer").innerText=
+ String(min).padStart(2,"0")+":"+
+ String(sec).padStart(2,"0");
+
+ if(time<=0){
+
+  clearInterval(timerInterval);
+
+  alert("⏰ Time Up! Test will be submitted.");
+
+  submitTest();
+
+ }
+
+ time--;
+
+},1000);
+
+
+showQuestion(0);
+
+</script>
+
+</body>
+</html>
+```
+
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>2nd PUC Physics Formula Bank - KCET JEE</title>
 
