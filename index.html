@@ -134,5 +134,489 @@
         <p>
             Learn, practice and prepare for your exams with
             notes, formulas and MCQs.
+            ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2nd PUC Maths Formula Bank - JEE / KCET</title>
+
+<style>
+body{
+  font-family:Arial,sans-serif;
+  background:#f4f6f8;
+  margin:0;
+  padding:20px;
+  color:#222;
+}
+h1{
+  text-align:center;
+  margin-bottom:5px;
+}
+.subtitle{
+  text-align:center;
+  color:#666;
+  margin-bottom:20px;
+}
+.chapter{
+  max-width:950px;
+  margin:10px auto;
+  background:white;
+  border-radius:10px;
+  box-shadow:0 2px 8px #ccc;
+  overflow:hidden;
+}
+button{
+  width:100%;
+  padding:15px;
+  border:0;
+  background:#1f4e79;
+  color:white;
+  font-size:17px;
+  font-weight:bold;
+  text-align:left;
+  cursor:pointer;
+}
+button:hover{background:#163b5c}
+.content{
+  display:none;
+  padding:15px 20px;
+  line-height:1.7;
+}
+.content.show{display:block}
+h3{
+  color:#1f4e79;
+  margin-bottom:5px;
+}
+.formula{
+  background:#f1f5f9;
+  padding:7px 10px;
+  margin:5px 0;
+  border-left:4px solid #1f4e79;
+}
+</style>
+</head>
+
+<body>
+
+<h1>📘 2nd PUC Mathematics Formula Bank</h1>
+<div class="subtitle">Karnataka • KCET • JEE Main Revision</div>
+
+
+<!-- 1 -->
+<div class="chapter">
+<button onclick="toggle(this)">1. Relations and Functions</button>
+<div class="content">
+
+<h3>Relations</h3>
+<div class="formula">Reflexive: (a,a) ∈ R for every a ∈ A</div>
+<div class="formula">Symmetric: (a,b) ∈ R ⇒ (b,a) ∈ R</div>
+<div class="formula">Transitive: (a,b),(b,c) ∈ R ⇒ (a,c) ∈ R</div>
+<div class="formula">Equivalence relation = Reflexive + Symmetric + Transitive</div>
+
+<h3>Functions</h3>
+<div class="formula">One-one: f(a)=f(b) ⇒ a=b</div>
+<div class="formula">Onto: Range(f)=Codomain</div>
+<div class="formula">Bijective = One-one + Onto</div>
+<div class="formula">(f∘g)(x)=f(g(x))</div>
+<div class="formula">Identity: I(x)=x</div>
+<div class="formula">Inverse exists iff f is bijective</div>
+<div class="formula">f⁻¹∘f = I and f∘f⁻¹ = I</div>
+
+</div>
+</div>
+
+
+<!-- 2 -->
+<div class="chapter">
+<button onclick="toggle(this)">2. Inverse Trigonometric Functions</button>
+<div class="content">
+
+<h3>Principal Values</h3>
+<div class="formula">sin⁻¹x ∈ [-π/2, π/2]</div>
+<div class="formula">cos⁻¹x ∈ [0,π]</div>
+<div class="formula">tan⁻¹x ∈ (-π/2,π/2)</div>
+<div class="formula">cot⁻¹x ∈ (0,π)</div>
+
+<h3>Identities</h3>
+<div class="formula">sin⁻¹x + cos⁻¹x = π/2</div>
+<div class="formula">tan⁻¹x + cot⁻¹x = π/2</div>
+<div class="formula">sec⁻¹x + cosec⁻¹x = π/2</div>
+<div class="formula">tan⁻¹x + tan⁻¹y = tan⁻¹((x+y)/(1-xy))</div>
+<div class="formula">tan⁻¹x - tan⁻¹y = tan⁻¹((x-y)/(1+xy))</div>
+<div class="formula">2tan⁻¹x = tan⁻¹(2x/(1-x²))</div>
+<div class="formula">sin⁻¹x = cos⁻¹(√(1-x²))</div>
+
+</div>
+</div>
+
+
+<!-- 3 -->
+<div class="chapter">
+<button onclick="toggle(this)">3. Matrices</button>
+<div class="content">
+
+<h3>Basic</h3>
+<div class="formula">Order of matrix = rows × columns</div>
+<div class="formula">A+B = B+A</div>
+<div class="formula">(A+B)+C=A+(B+C)</div>
+<div class="formula">A(BC)=(AB)C</div>
+<div class="formula">A(B+C)=AB+AC</div>
+<div class="formula">(A+B)ᵀ=Aᵀ+Bᵀ</div>
+<div class="formula">(AB)ᵀ=BᵀAᵀ</div>
+
+<h3>2×2 Determinant / Inverse</h3>
+<div class="formula">
+A = [a b; c d]
+</div>
+<div class="formula">|A| = ad-bc</div>
+<div class="formula">
+A⁻¹ = 1/(ad-bc) [d -b; -c a]
+</div>
+<div class="formula">AA⁻¹=A⁻¹A=I</div>
+<div class="formula">A⁻¹ exists iff |A| ≠ 0</div>
+
+<h3>Important</h3>
+<div class="formula">(AB)⁻¹=B⁻¹A⁻¹</div>
+<div class="formula">(Aᵀ)⁻¹=(A⁻¹)ᵀ</div>
+<div class="formula">If A is symmetric: Aᵀ=A</div>
+<div class="formula">If A is skew-symmetric: Aᵀ=-A</div>
+
+</div>
+</div>
+
+
+<!-- 4 -->
+<div class="chapter">
+<button onclick="toggle(this)">4. Determinants</button>
+<div class="content">
+
+<h3>2×2</h3>
+<div class="formula">|a b; c d| = ad-bc</div>
+
+<h3>3×3</h3>
+<div class="formula">
+|a b c; d e f; g h i|
+= a(ei-fh)-b(di-fg)+c(dh-eg)
+</div>
+
+<h3>Properties</h3>
+<div class="formula">Interchanging two rows/columns changes sign.</div>
+<div class="formula">Two identical rows/columns ⇒ determinant = 0</div>
+<div class="formula">Two proportional rows/columns ⇒ determinant = 0</div>
+<div class="formula">Common factor can be taken outside.</div>
+<div class="formula">Adding multiple of one row to another does not change determinant.</div>
+
+<h3>Area</h3>
+<div class="formula">
+Area = 1/2 |x₁(y₂-y₃)+x₂(y₃-y₁)+x₃(y₁-y₂)|
+</div>
+
+<h3>Cramer's Rule</h3>
+<div class="formula">x=Dx/D, y=Dy/D, z=Dz/D</div>
+
+</div>
+</div>
+
+
+<!-- 5 -->
+<div class="chapter">
+<button onclick="toggle(this)">5. Continuity and Differentiability</button>
+<div class="content">
+
+<h3>Continuity</h3>
+<div class="formula">f is continuous at x=a iff lim(x→a)f(x)=f(a)</div>
+<div class="formula">LHL = RHL = f(a)</div>
+
+<h3>Derivatives</h3>
+<div class="formula">d/dx(xⁿ)=nxⁿ⁻¹</div>
+<div class="formula">d/dx(eˣ)=eˣ</div>
+<div class="formula">d/dx(aˣ)=aˣ ln a</div>
+<div class="formula">d/dx(ln x)=1/x</div>
+<div class="formula">d/dx(sin x)=cos x</div>
+<div class="formula">d/dx(cos x)=-sin x</div>
+<div class="formula">d/dx(tan x)=sec²x</div>
+<div class="formula">d/dx(cot x)=-cosec²x</div>
+<div class="formula">d/dx(sec x)=sec x tan x</div>
+<div class="formula">d/dx(cosec x)=-cosec x cot x</div>
+
+<h3>Inverse Trigonometric</h3>
+<div class="formula">d/dx(sin⁻¹x)=1/√(1-x²)</div>
+<div class="formula">d/dx(cos⁻¹x)=-1/√(1-x²)</div>
+<div class="formula">d/dx(tan⁻¹x)=1/(1+x²)</div>
+<div class="formula">d/dx(cot⁻¹x)=-1/(1+x²)</div>
+
+<h3>Rules</h3>
+<div class="formula">(uv)'=u'v+uv'</div>
+<div class="formula">(u/v)'=(vu'-uv')/v²</div>
+<div class="formula">Chain rule: d/dx f(g(x))=f'(g(x))g'(x)</div>
+
+</div>
+</div>
+
+
+<!-- 6 -->
+<div class="chapter">
+<button onclick="toggle(this)">6. Application of Derivatives</button>
+<div class="content">
+
+<h3>Tangent & Normal</h3>
+<div class="formula">Slope of tangent = dy/dx</div>
+<div class="formula">Tangent: y-y₁=m(x-x₁)</div>
+<div class="formula">Slope of normal = -1/m</div>
+
+<h3>Increasing / Decreasing</h3>
+<div class="formula">f'(x)>0 ⇒ increasing</div>
+<div class="formula">f'(x)<0 ⇒ decreasing</div>
+
+<h3>Maxima / Minima</h3>
+<div class="formula">Critical point: f'(x)=0</div>
+<div class="formula">f''(x)<0 ⇒ local maximum</div>
+<div class="formula">f''(x)>0 ⇒ local minimum</div>
+
+<h3>Approximation</h3>
+<div class="formula">dy=f'(x)dx</div>
+<div class="formula">Δy ≈ dy</div>
+
+</div>
+</div>
+
+
+<!-- 7 -->
+<div class="chapter">
+<button onclick="toggle(this)">7. Integrals</button>
+<div class="content">
+
+<h3>Basic Integrals</h3>
+<div class="formula">∫xⁿdx = xⁿ⁺¹/(n+1)+C, n≠-1</div>
+<div class="formula">∫dx/x = ln|x|+C</div>
+<div class="formula">∫eˣdx=eˣ+C</div>
+<div class="formula">∫aˣdx=aˣ/ln(a)+C</div>
+<div class="formula">∫sin x dx=-cos x+C</div>
+<div class="formula">∫cos x dx=sin x+C</div>
+<div class="formula">∫sec²x dx=tan x+C</div>
+<div class="formula">∫cosec²x dx=-cot x+C</div>
+<div class="formula">∫sec x tan x dx=sec x+C</div>
+<div class="formula">∫cosec x cot x dx=-cosec x+C</div>
+
+<h3>Standard Forms</h3>
+<div class="formula">∫dx/(a²+x²)=1/a tan⁻¹(x/a)+C</div>
+<div class="formula">∫dx/√(a²-x²)=sin⁻¹(x/a)+C</div>
+<div class="formula">∫dx/(x²-a²)=1/(2a)ln|(x-a)/(x+a)|+C</div>
+
+<h3>Methods</h3>
+<div class="formula">Integration by parts: ∫u dv = uv - ∫v du</div>
+<div class="formula">Substitution: ∫f(g(x))g'(x)dx = ∫f(t)dt</div>
+
+<h3>Definite Integral</h3>
+<div class="formula">∫ₐᵇf(x)dx = F(b)-F(a)</div>
+<div class="formula">∫ₐᵇf(x)dx = ∫ₐᵇf(a+b-x)dx</div>
+<div class="formula">∫₋ₐᵃ f(x)dx = 0 for odd f</div>
+<div class="formula">∫₋ₐᵃ f(x)dx = 2∫₀ᵃf(x)dx for even f</div>
+
+</div>
+</div>
+
+
+<!-- 8 -->
+<div class="chapter">
+<button onclick="toggle(this)">8. Application of Integrals</button>
+<div class="content">
+
+<h3>Area</h3>
+<div class="formula">Area under curve = ∫ₐᵇ y dx</div>
+<div class="formula">Area = ∫ₐᵇ |f(x)-g(x)| dx</div>
+<div class="formula">Area with respect to y = ∫ y dx/dy dy</div>
+
+<h3>Common Areas</h3>
+<div class="formula">Circle: πr²</div>
+<div class="formula">Triangle: 1/2 × base × height</div>
+<div class="formula">Parabola y²=4ax: standard area between curve and latus rectum = 8a²/3</div>
+
+</div>
+</div>
+
+
+<!-- 9 -->
+<div class="chapter">
+<button onclick="toggle(this)">9. Differential Equations</button>
+<div class="content">
+
+<h3>Basic</h3>
+<div class="formula">Order = highest derivative present</div>
+<div class="formula">Degree = power of highest derivative after removing radicals/fractions in derivatives</div>
+
+<h3>Variable Separable</h3>
+<div class="formula">dy/dx = f(x)g(y)</div>
+<div class="formula">dy/g(y)=f(x)dx</div>
+
+<h3>Linear Differential Equation</h3>
+<div class="formula">dy/dx + Py = Q</div>
+<div class="formula">I.F. = e^(∫Pdx)</div>
+<div class="formula">Solution: y(IF)=∫Q(IF)dx+C</div>
+
+<h3>Another Form</h3>
+<div class="formula">dx/dy + Px = Q</div>
+<div class="formula">I.F.=e^(∫Pdy)</div>
+
+</div>
+</div>
+
+
+<!-- 10 -->
+<div class="chapter">
+<button onclick="toggle(this)">10. Vector Algebra</button>
+<div class="content">
+
+<h3>Vector</h3>
+<div class="formula">|a|=√(a₁²+a₂²+a₃²)</div>
+<div class="formula">Unit vector = a/|a|</div>
+<div class="formula">a·b=a₁b₁+a₂b₂+a₃b₃</div>
+<div class="formula">a·b=|a||b|cosθ</div>
+<div class="formula">a·b=0 ⇒ perpendicular</div>
+
+<h3>Cross Product</h3>
+<div class="formula">|a×b|=|a||b|sinθ</div>
+<div class="formula">a×b=0 ⇒ parallel</div>
+<div class="formula">a×b = determinant of i,j,k / a₁,a₂,a₃ / b₁,b₂,b₃</div>
+
+<h3>Scalar Triple Product</h3>
+<div class="formula">[a b c]=a·(b×c)</div>
+<div class="formula">Volume of parallelepiped = |a·(b×c)|</div>
+<div class="formula">Coplanar vectors ⇒ [a b c]=0</div>
+
+<h3>Section Formula</h3>
+<div class="formula">
+Point dividing A,B internally in m:n =
+(mB+nA)/(m+n)
+</div>
+
+</div>
+</div>
+
+
+<!-- 11 -->
+<div class="chapter">
+<button onclick="toggle(this)">11. Three Dimensional Geometry</button>
+<div class="content">
+
+<h3>Distance</h3>
+<div class="formula">
+Distance between P(x₁,y₁,z₁), Q(x₂,y₂,z₂)
+=√[(x₂-x₁)²+(y₂-y₁)²+(z₂-z₁)²]
+</div>
+
+<h3>Direction Cosines</h3>
+<div class="formula">l²+m²+n²=1</div>
+
+<h3>Line</h3>
+<div class="formula">
+(x-x₁)/a = (y-y₁)/b = (z-z₁)/c
+</div>
+
+<h3>Plane</h3>
+<div class="formula">ax+by+cz+d=0</div>
+<div class="formula">Distance from point = |ax₁+by₁+cz₁+d|/√(a²+b²+c²)</div>
+
+<h3>Angle</h3>
+<div class="formula">
+cosθ=(a₁a₂+b₁b₂+c₁c₂)/
+√[(a₁²+b₁²+c₁²)(a₂²+b₂²+c₂²)]
+</div>
+
+<h3>Shortest Distance</h3>
+<div class="formula">
+For skew lines:
+SD = |(b×d)·(a₂-a₁)|/|b×d|
+</div>
+
+</div>
+</div>
+
+
+<!-- 12 -->
+<div class="chapter">
+<button onclick="toggle(this)">12. Linear Programming</button>
+<div class="content">
+
+<h3>Key Terms</h3>
+<div class="formula">Objective function: Z=ax+by</div>
+<div class="formula">Constraints: linear inequalities</div>
+<div class="formula">Feasible region = common region satisfying all constraints</div>
+
+<h3>Corner Point Method</h3>
+<div class="formula">
+1. Draw all constraint lines.
+2. Find feasible region.
+3. Find corner points.
+4. Evaluate Z at every corner.
+5. Maximum/minimum value gives optimum solution.
+</div>
+
+<div class="formula">For bounded feasible region, optimum occurs at a corner point.</div>
+
+</div>
+</div>
+
+
+<!-- 13 -->
+<div class="chapter">
+<button onclick="toggle(this)">13. Probability</button>
+<div class="content">
+
+<h3>Basic</h3>
+<div class="formula">P(A)=Number of favourable outcomes / Total outcomes</div>
+<div class="formula">0≤P(A)≤1</div>
+<div class="formula">P(A')=1-P(A)</div>
+
+<h3>Addition Theorem</h3>
+<div class="formula">P(A∪B)=P(A)+P(B)-P(A∩B)</div>
+<div class="formula">If A and B are mutually exclusive: P(A∩B)=0</div>
+
+<h3>Conditional Probability</h3>
+<div class="formula">P(A|B)=P(A∩B)/P(B)</div>
+
+<h3>Multiplication Theorem</h3>
+<div class="formula">P(A∩B)=P(A)P(B|A)</div>
+<div class="formula">P(A∩B)=P(B)P(A|B)</div>
+
+<h3>Independent Events</h3>
+<div class="formula">P(A∩B)=P(A)P(B)</div>
+
+<h3>Bayes' Theorem</h3>
+<div class="formula">
+P(Aᵢ|B)=P(Aᵢ)P(B|Aᵢ) /
+ΣP(Aⱼ)P(B|Aⱼ)
+</div>
+
+<h3>Random Variable</h3>
+<div class="formula">Mean: E(X)=Σxᵢpᵢ</div>
+<div class="formula">E(X²)=Σxᵢ²pᵢ</div>
+<div class="formula">Variance: Var(X)=E(X²)-[E(X)]²</div>
+<div class="formula">SD=√Var(X)</div>
+
+<h3>Binomial Distribution</h3>
+<div class="formula">P(X=r)=ⁿCᵣ pʳqⁿ⁻ʳ</div>
+<div class="formula">q=1-p</div>
+<div class="formula">Mean=np</div>
+<div class="formula">Variance=npq</div>
+<div class="formula">SD=√npq</div>
+
+</div>
+</div>
+
+
+<script>
+function toggle(btn){
+  const box=btn.nextElementSibling;
+  box.classList.toggle("show");
+}
+</script>
+
+</body>
+</html>
+```
+
             
     
