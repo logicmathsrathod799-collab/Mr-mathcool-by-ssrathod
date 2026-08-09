@@ -616,12 +616,12 @@ function toggle(btn){
 
 </body>
 </html>
- <!doctype html><html lang="en"><head>
+<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>2nd PUC Maths JEE Master Bank</title>
+<title>2nd PUC Maths JEE/KCET Master Bank</title>
 <style>
-*{box-sizing:border-box}body{margin:0;background:red;font-family:Arial,sans-serif;color:#222}
-header{background:brown;color:#222;padding:18px;text-align:center;position:sticky;top:0;z-index:5}
+*{box-sizing:border-box}body{margin:0;background:#eef2f7;font-family:Arial,sans-serif;color:#222}
+header{background:#17365d;color:#fff;padding:18px;text-align:center;position:sticky;top:0;z-index:5}
 h1{margin:0 0 6px}.wrap{max-width:1050px;margin:15px auto}.panel,.q,.result{background:#fff;border-radius:12px;box-shadow:0 2px 9px #cbd2da;padding:16px;margin:14px 0}
 .grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:10px}select,input{width:100%;padding:11px;border:1px solid #ccd3da;border-radius:8px}
 button{border:0;border-radius:8px;padding:11px 14px;font-weight:bold;cursor:pointer}.blue{background:#17365d;color:#fff}.red{background:#b30000;color:#fff}.green{background:#23833c;color:#fff}.gray{background:#66717d;color:#fff}
@@ -632,7 +632,7 @@ button{border:0;border-radius:8px;padding:11px 14px;font-weight:bold;cursor:poin
 .actions{display:flex;gap:8px}.actions button{flex:1}.result{display:none;text-align:center}.score{font-size:34px;font-weight:800;color:#17365d}.hidden{display:none}
 @media(max-width:700px){.grid{grid-template-columns:1fr}.actions{flex-wrap:wrap}.actions button{min-width:30%}}
 </style></head><body>
-<header><h1>📘 2nd PUC Maths — JEE </h1><div>All Chapters • 30 Questions/Chapter • Exam + Practice Mode</div></header>
+<header><h1>📘 2nd PUC Maths — JEE / KCET</h1><div>All Chapters • 30 Questions/Chapter • Exam + Practice Mode</div></header>
 <div class="wrap">
 <div class="panel" id="setup"><div class="grid">
 <div><b>Choose Chapter</b><select id="chapter"></select></div>
@@ -662,6 +662,7 @@ function prev(){save();if(i>0){i--;render()}}
 function submitTest(){if(submitted)return;save();if(!confirm("Submit this chapter test?"))return;submitted=true;clearInterval(timer);let c=qs.filter(correct).length,a=qs.filter(attempted).length,w=a-c,u=qs.length-a,s=4*c-w;document.getElementById("score").textContent=s;document.getElementById("co").textContent=c;document.getElementById("wr").textContent=w;document.getElementById("un").textContent=u;document.getElementById("acc").textContent=(a?Math.round(c/a*100):0)+"%";document.getElementById("result").style.display="block";document.querySelectorAll(".sol").forEach(x=>x.classList.add("show"));document.getElementById("actions").classList.add("hidden");document.getElementById("result").scrollIntoView({behavior:"smooth"})}
 function tick(){t--;if(t<=0){document.getElementById("tm").textContent="00:00";submitTest();return}document.getElementById("tm").textContent=String(Math.floor(t/60)).padStart(2,"0")+":"+String(t%60).padStart(2,"0")}
 function restart(){start()}
+</script></body></html>
 </script></body></html>
 
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -1320,7 +1321,11 @@ function closeAll(){
 
 </body>
 </html>
- <!doctype html><html lang="en"><head>
+ 
+<div class="actions hidden" id="actions"><button class="gray" onclick="prev()">← Previous</button><button class="blue" onclick="next()">Next →</button><button class="red" onclick="submitTest()">Submit Test</button></div>
+<div class="result" id="result"><h2>🏆 Result</h2><div class="score" id="score">0</div><p>Correct: <b id="co">0</b> | Wrong: <b id="wr">0</b> | Unattempted: <b id="un">0</b></p><p>Accuracy: <b id="acc">0%</b></p><button class="blue" onclick="restart()">Restart Chapter</button> <button class="green" onclick="location.reload()">Choose Chapter</button></div>
+</div>
+<!doctype html><html lang="en"><head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>2nd PUC Physics — JEE / KCET Master Question Bank</title>
 <style>
