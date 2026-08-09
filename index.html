@@ -617,6 +617,665 @@ function toggle(btn){
 </body>
 </html>
 ```
+            ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>2nd PUC Physics Formula Bank - KCET JEE</title>
 
-            
-    
+<style>
+*{box-sizing:border-box}
+body{
+  margin:0;
+  padding:18px;
+  font-family:Arial,sans-serif;
+  background:#f3f6f9;
+  color:#222
+}
+h1{
+  text-align:center;
+  margin:8px 0;
+  color:#17365d
+}
+.subtitle{
+  text-align:center;
+  color:#666;
+  margin-bottom:18px
+}
+.controls{
+  max-width:1000px;
+  margin:auto auto 15px;
+  display:flex;
+  gap:8px
+}
+.controls button{
+  flex:1;
+  text-align:center
+}
+.chapter{
+  max-width:1000px;
+  margin:10px auto;
+  background:white;
+  border-radius:10px;
+  overflow:hidden;
+  box-shadow:0 2px 7px #ccc
+}
+.chapter>button{
+  width:100%;
+  border:0;
+  padding:15px;
+  background:#17365d;
+  color:white;
+  font-size:17px;
+  font-weight:bold;
+  text-align:left;
+  cursor:pointer
+}
+.chapter>button:hover{background:#0f2745}
+.content{
+  display:none;
+  padding:15px 20px;
+  line-height:1.65
+}
+.content.show{display:block}
+h3{
+  color:#17365d;
+  margin:10px 0 5px
+}
+.formula{
+  background:#f1f5f8;
+  border-left:4px solid #17365d;
+  padding:7px 10px;
+  margin:5px 0;
+  overflow-x:auto
+}
+.note{
+  background:#fff7d6;
+  border-left:4px solid #d99b00;
+  padding:8px 10px;
+  margin:8px 0
+}
+.tag{
+  font-size:11px;
+  background:#ddd;
+  padding:2px 5px;
+  border-radius:4px;
+  float:right
+}
+@media(max-width:600px){
+ body{padding:8px}
+ .content{padding:12px}
+ .chapter>button{font-size:15px}
+}
+</style>
+</head>
+
+<body>
+
+<h1>⚡ 2nd PUC Physics Formula Bank</h1>
+<div class="subtitle">Karnataka • KCET • JEE Main Revision</div>
+
+<div class="controls">
+  <button onclick="openAll()">Open All</button>
+  <button onclick="closeAll()">Close All</button>
+</div>
+
+
+<!-- 1 -->
+<div class="chapter">
+<button onclick="toggle(this)">1. Electric Charges and Fields</button>
+<div class="content">
+
+<h3>Charge</h3>
+<div class="formula">q = ne</div>
+<div class="formula">e = 1.6 × 10⁻¹⁹ C</div>
+<div class="formula">SI unit of charge = coulomb (C)</div>
+
+<h3>Coulomb's Law</h3>
+<div class="formula">F = (1/4πε₀) |q₁q₂|/r²</div>
+<div class="formula">1/(4πε₀) = 9 × 10⁹ N m²/C²</div>
+<div class="formula">In medium: F = (1/4πε) |q₁q₂|/r²</div>
+
+<h3>Electric Field</h3>
+<div class="formula">E = F/q₀</div>
+<div class="formula">E = (1/4πε₀) q/r²</div>
+<div class="formula">Force: F = qE</div>
+
+<h3>Electric Dipole</h3>
+<div class="formula">p = q(2a)</div>
+<div class="formula">p = qd</div>
+<div class="formula">Axial field: E = (1/4πε₀) 2pr/(r²-a²)²</div>
+<div class="formula">For r ≫ a: E = (1/4πε₀) 2p/r³</div>
+<div class="formula">Equatorial field: E = (1/4πε₀) p/(r²+a²)³ᐟ²</div>
+<div class="formula">For r ≫ a: E = (1/4πε₀) p/r³</div>
+
+<h3>Dipole in Uniform Field</h3>
+<div class="formula">τ = pE sinθ</div>
+<div class="formula">U = -pE cosθ</div>
+
+<h3>Electric Flux</h3>
+<div class="formula">Φ = E·A = EA cosθ</div>
+<div class="formula">Φ = ∮E·dA</div>
+
+<h3>Gauss Law</h3>
+<div class="formula">∮E·dA = qᵢₙ/ε₀</div>
+
+<div class="note">JEE/KCET: Remember the standard Gauss-law results for spherical, cylindrical and planar charge distributions.</div>
+
+<h3>Standard Results</h3>
+<div class="formula">Infinite line charge: E = λ/(2πε₀r)</div>
+<div class="formula">Infinite plane sheet: E = σ/(2ε₀)</div>
+<div class="formula">Conducting surface: E = σ/ε₀</div>
+<div class="formula">Outside charged sphere: E = (1/4πε₀)Q/r²</div>
+<div class="formula">Inside conducting shell: E = 0</div>
+
+</div>
+</div>
+
+
+<!-- 2 -->
+<div class="chapter">
+<button onclick="toggle(this)">2. Electrostatic Potential and Capacitance</button>
+<div class="content">
+
+<h3>Potential</h3>
+<div class="formula">V = W/q</div>
+<div class="formula">V = (1/4πε₀) q/r</div>
+<div class="formula">Potential difference: V_B - V_A = -∫ₐᵇ E·dr</div>
+<div class="formula">E = -dV/dr</div>
+
+<h3>Potential Energy</h3>
+<div class="formula">U = (1/4πε₀) q₁q₂/r</div>
+<div class="formula">U(dipole) = -pE cosθ</div>
+
+<h3>Capacitance</h3>
+<div class="formula">C = Q/V</div>
+<div class="formula">Parallel plate: C = ε₀A/d</div>
+<div class="formula">With dielectric: C = Kε₀A/d</div>
+
+<h3>Combination</h3>
+<div class="formula">Parallel: C = C₁+C₂+C₃+...</div>
+<div class="formula">Series: 1/C = 1/C₁+1/C₂+1/C₃+...</div>
+
+<h3>Energy Stored</h3>
+<div class="formula">U = 1/2 CV²</div>
+<div class="formula">U = Q²/(2C)</div>
+<div class="formula">U = 1/2 QV</div>
+<div class="formula">Energy density = 1/2 ε₀E²</div>
+
+<h3>Dielectric</h3>
+<div class="formula">K = ε/ε₀</div>
+<div class="formula">E = E₀/K</div>
+
+</div>
+</div>
+
+
+<!-- 3 -->
+<div class="chapter">
+<button onclick="toggle(this)">3. Current Electricity</button>
+<div class="content">
+
+<h3>Current</h3>
+<div class="formula">I = Q/t</div>
+<div class="formula">I = neAv_d</div>
+<div class="formula">J = I/A</div>
+<div class="formula">J = ne v_d</div>
+
+<h3>Ohm's Law</h3>
+<div class="formula">V = IR</div>
+<div class="formula">R = ρL/A</div>
+<div class="formula">σ = 1/ρ</div>
+
+<h3>Temperature</h3>
+<div class="formula">R = R₀(1+αΔT)</div>
+
+<h3>Electrical Power</h3>
+<div class="formula">P = VI</div>
+<div class="formula">P = I²R</div>
+<div class="formula">P = V²/R</div>
+<div class="formula">Electrical energy = Pt = VIt</div>
+
+<h3>Cells</h3>
+<div class="formula">Terminal voltage: V = E-Ir</div>
+<div class="formula">Charging: V = E+Ir</div>
+
+<h3>Kirchhoff Laws</h3>
+<div class="formula">Junction rule: ΣI = 0</div>
+<div class="formula">Loop rule: ΣV = 0</div>
+
+<h3>Wheatstone Bridge</h3>
+<div class="formula">P/Q = R/S</div>
+
+<h3>Drift Velocity</h3>
+<div class="formula">v_d = eEτ/m</div>
+<div class="formula">I = neAv_d</div>
+
+</div>
+</div>
+
+
+<!-- 4 -->
+<div class="chapter">
+<button onclick="toggle(this)">4. Moving Charges and Magnetism</button>
+<div class="content">
+
+<h3>Magnetic Force</h3>
+<div class="formula">F = qvB sinθ</div>
+<div class="formula">Vector: F = q(v×B)</div>
+
+<h3>Charged Particle in Magnetic Field</h3>
+<div class="formula">r = mv/(qB)</div>
+<div class="formula">ω = qB/m</div>
+<div class="formula">T = 2πm/(qB)</div>
+<div class="formula">f = qB/(2πm)</div>
+
+<h3>Force on Current Carrying Wire</h3>
+<div class="formula">F = BIL sinθ</div>
+
+<h3>Current Loop</h3>
+<div class="formula">τ = NIAB sinθ</div>
+<div class="formula">Magnetic moment: M = NIA</div>
+
+<h3>Biot-Savart Law</h3>
+<div class="formula">dB = (μ₀/4π) Idl sinθ/r²</div>
+
+<h3>Long Straight Wire</h3>
+<div class="formula">B = μ₀I/(2πr)</div>
+
+<h3>Circular Coil</h3>
+<div class="formula">At centre: B = μ₀NI/(2R)</div>
+
+<h3>Solenoid</h3>
+<div class="formula">B = μ₀nI</div>
+
+<h3>Parallel Currents</h3>
+<div class="formula">F/L = μ₀I₁I₂/(2πd)</div>
+
+<h3>Ampere's Law</h3>
+<div class="formula">∮B·dl = μ₀I</div>
+
+<h3>Velocity Selector</h3>
+<div class="formula">v = E/B</div>
+
+<h3>Cyclotron</h3>
+<div class="formula">f = qB/(2πm)</div>
+<div class="formula">K.E. = q²B²R²/(2m)</div>
+
+</div>
+</div>
+
+
+<!-- 5 -->
+<div class="chapter">
+<button onclick="toggle(this)">5. Magnetism and Matter</button>
+<div class="content">
+
+<h3>Magnetic Dipole</h3>
+<div class="formula">Magnetic moment of current loop: M = IA</div>
+<div class="formula">Torque: τ = MB sinθ</div>
+<div class="formula">Potential energy: U = -MB cosθ</div>
+
+<h3>Magnetic Field</h3>
+<div class="formula">B = μ₀(H+M)</div>
+<div class="formula">B = μH</div>
+<div class="formula">μ = μ₀μᵣ</div>
+<div class="formula">μᵣ = 1+χₘ</div>
+
+<h3>Earth Magnetism</h3>
+<div class="formula">B_H = B cosδ</div>
+<div class="formula">B_V = B sinδ</div>
+<div class="formula">tanδ = B_V/B_H</div>
+
+</div>
+</div>
+
+
+<!-- 6 -->
+<div class="chapter">
+<button onclick="toggle(this)">6. Electromagnetic Induction</button>
+<div class="content">
+
+<h3>Magnetic Flux</h3>
+<div class="formula">Φ = BA cosθ</div>
+
+<h3>Faraday's Law</h3>
+<div class="formula">ε = -dΦ/dt</div>
+<div class="formula">For N turns: ε = -N dΦ/dt</div>
+
+<h3>Motional EMF</h3>
+<div class="formula">ε = Blv</div>
+
+<h3>Self Inductance</h3>
+<div class="formula">ε = -L(dI/dt)</div>
+<div class="formula">L = NΦ/I</div>
+<div class="formula">Energy = 1/2 LI²</div>
+
+<h3>Mutual Inductance</h3>
+<div class="formula">ε₂ = -M(dI₁/dt)</div>
+
+<h3>AC Generator</h3>
+<div class="formula">ε = NBAω sinωt</div>
+<div class="formula">ε₀ = NBAω</div>
+
+</div>
+</div>
+
+
+<!-- 7 -->
+<div class="chapter">
+<button onclick="toggle(this)">7. Alternating Current</button>
+<div class="content">
+
+<h3>AC Voltage/Current</h3>
+<div class="formula">V = V₀ sinωt</div>
+<div class="formula">I = I₀ sinωt</div>
+<div class="formula">Vᵣₘₛ = V₀/√2</div>
+<div class="formula">Iᵣₘₛ = I₀/√2</div>
+
+<h3>Reactance</h3>
+<div class="formula">X_L = ωL</div>
+<div class="formula">X_C = 1/(ωC)</div>
+
+<h3>Impedance</h3>
+<div class="formula">Z = √[R²+(X_L-X_C)²]</div>
+<div class="formula">Iᵣₘₛ = Vᵣₘₛ/Z</div>
+
+<h3>Phase</h3>
+<div class="formula">tanφ = (X_L-X_C)/R</div>
+<div class="formula">Power factor = cosφ</div>
+
+<h3>AC Power</h3>
+<div class="formula">P = VᵣₘₛIᵣₘₛcosφ</div>
+
+<h3>Resonance</h3>
+<div class="formula">X_L = X_C</div>
+<div class="formula">ω₀ = 1/√LC</div>
+<div class="formula">f₀ = 1/(2π√LC)</div>
+
+<h3>Transformer</h3>
+<div class="formula">Vₛ/Vₚ = Nₛ/Nₚ</div>
+<div class="formula">Iₛ/Iₚ = Nₚ/Nₛ</div>
+<div class="formula">Ideal transformer: VₚIₚ = VₛIₛ</div>
+
+</div>
+</div>
+
+
+<!-- 8 -->
+<div class="chapter">
+<button onclick="toggle(this)">8. Electromagnetic Waves</button>
+<div class="content">
+
+<h3>Wave Relation</h3>
+<div class="formula">c = 1/√(μ₀ε₀)</div>
+<div class="formula">c = fλ</div>
+
+<h3>Electric and Magnetic Fields</h3>
+<div class="formula">E/B = c</div>
+
+<h3>Energy Density</h3>
+<div class="formula">u_E = 1/2 ε₀E²</div>
+<div class="formula">u_B = B²/(2μ₀)</div>
+
+<h3>EM Spectrum</h3>
+<div class="formula">Radio → Microwave → Infrared → Visible → UV → X-ray → Gamma</div>
+<div class="formula">c = fλ</div>
+
+</div>
+</div>
+
+
+<!-- 9 -->
+<div class="chapter">
+<button onclick="toggle(this)">9. Ray Optics and Optical Instruments</button>
+<div class="content">
+
+<h3>Reflection</h3>
+<div class="formula">i = r</div>
+
+<h3>Mirror Formula</h3>
+<div class="formula">1/f = 1/v + 1/u</div>
+<div class="formula">Magnification: m = -v/u</div>
+
+<h3>Refraction</h3>
+<div class="formula">n₁sin i = n₂sin r</div>
+<div class="formula">n = c/v</div>
+
+<h3>Critical Angle</h3>
+<div class="formula">sin C = n₂/n₁</div>
+<div class="formula">For air: sin C = 1/n</div>
+
+<h3>Lens</h3>
+<div class="formula">1/f = 1/v - 1/u</div>
+<div class="formula">m = v/u</div>
+<div class="formula">Power: P = 1/f(metre)</div>
+<div class="formula">P(total) = P₁+P₂+...</div>
+
+<h3>Lens Maker</h3>
+<div class="formula">1/f = (μ-1)(1/R₁ - 1/R₂)</div>
+
+<h3>Prism</h3>
+<div class="formula">δ = i+e-A</div>
+<div class="formula">At minimum deviation: i=e</div>
+<div class="formula">μ = sin[(A+δₘ)/2]/sin(A/2)</div>
+
+<h3>Optical Instruments</h3>
+<div class="formula">Simple microscope: M = 1+D/f</div>
+<div class="formula">At near point: M = 1+D/f</div>
+<div class="formula">At infinity: M = D/f</div>
+
+<div class="note">D = least distance of distinct vision ≈ 25 cm.</div>
+
+</div>
+</div>
+
+
+<!-- 10 -->
+<div class="chapter">
+<button onclick="toggle(this)">10. Wave Optics</button>
+<div class="content">
+
+<h3>Young's Double Slit Experiment</h3>
+<div class="formula">Path difference: Δ = d sinθ</div>
+<div class="formula">Bright fringe: Δ = nλ</div>
+<div class="formula">Dark fringe: Δ = (2n+1)λ/2</div>
+<div class="formula">Fringe width: β = λD/d</div>
+
+<h3>Interference</h3>
+<div class="formula">I = I₁+I₂+2√(I₁I₂)cosφ</div>
+<div class="formula">Imax = (√I₁+√I₂)²</div>
+<div class="formula">Imin = (√I₁-√I₂)²</div>
+
+<h3>Diffraction</h3>
+<div class="formula">Minima: a sinθ = nλ</div>
+
+<h3>Polarisation</h3>
+<div class="formula">Malus law: I = I₀cos²θ</div>
+<div class="formula">Brewster law: μ = tan i_p</div>
+
+</div>
+</div>
+
+
+<!-- 11 -->
+<div class="chapter">
+<button onclick="toggle(this)">11. Dual Nature of Radiation and Matter</button>
+<div class="content">
+
+<h3>Photon</h3>
+<div class="formula">E = hf</div>
+<div class="formula">E = hc/λ</div>
+<div class="formula">p = h/λ</div>
+
+<h3>Photoelectric Effect</h3>
+<div class="formula">hf = φ + Kmax</div>
+<div class="formula">Kmax = eV₀</div>
+<div class="formula">hf = φ + eV₀</div>
+<div class="formula">φ = h f₀</div>
+
+<h3>de Broglie Wavelength</h3>
+<div class="formula">λ = h/p</div>
+<div class="formula">λ = h/mv</div>
+<div class="formula">For electron accelerated through V: λ = h/√(2meV)</div>
+
+</div>
+</div>
+
+
+<!-- 12 -->
+<div class="chapter">
+<button onclick="toggle(this)">12. Atoms</button>
+<div class="content">
+
+<h3>Bohr Model</h3>
+<div class="formula">mvr = nh/(2π)</div>
+
+<h3>Radius</h3>
+<div class="formula">rₙ = n²r₁/Z</div>
+<div class="formula">r₁ = 0.529 Å for hydrogen</div>
+
+<h3>Energy</h3>
+<div class="formula">Eₙ = -13.6 Z²/n² eV</div>
+
+<h3>Hydrogen Spectrum</h3>
+<div class="formula">1/λ = RZ²(1/n₁² - 1/n₂²)</div>
+<div class="formula">R ≈ 1.097×10⁷ m⁻¹</div>
+
+<h3>Angular Momentum</h3>
+<div class="formula">L = nh/(2π)</div>
+
+</div>
+</div>
+
+
+<!-- 13 -->
+<div class="chapter">
+<button onclick="toggle(this)">13. Nuclei</button>
+<div class="content">
+
+<h3>Nuclear Size</h3>
+<div class="formula">R = R₀A¹ᐟ³</div>
+<div class="formula">R₀ ≈ 1.2 fm</div>
+
+<h3>Mass Defect</h3>
+<div class="formula">Δm = Zmₚ+(A-Z)mₙ-M</div>
+
+<h3>Binding Energy</h3>
+<div class="formula">BE = Δmc²</div>
+<div class="formula">1 u ≈ 931.5 MeV/c²</div>
+<div class="formula">BE per nucleon = BE/A</div>
+
+<h3>Radioactive Decay</h3>
+<div class="formula">N = N₀e⁻λt</div>
+<div class="formula">Activity: A = λN</div>
+<div class="formula">T₁/₂ = 0.693/λ</div>
+<div class="formula">Mean life: τ = 1/λ</div>
+
+<h3>Q-value</h3>
+<div class="formula">Q = (Initial mass - Final mass)c²</div>
+
+</div>
+</div>
+
+
+<!-- 14 -->
+<div class="chapter">
+<button onclick="toggle(this)">14. Semiconductor Electronics</button>
+<div class="content">
+
+<h3>Semiconductor</h3>
+<div class="formula">Intrinsic semiconductor: n = p = nᵢ</div>
+<div class="formula">Conductivity: σ = neμₑ + peμₕ</div>
+
+<h3>Diode</h3>
+<div class="formula">Diode equation: I = I₀(e^(eV/ηkT)-1)</div>
+
+<h3>Rectifier</h3>
+<div class="formula">Half-wave rectifier efficiency ≈ 40.6%</div>
+<div class="formula">Full-wave rectifier efficiency ≈ 81.2%</div>
+
+<h3>Transistor</h3>
+<div class="formula">Iₑ = I꜀ + Iᵦ</div>
+<div class="formula">α = I꜀/Iₑ</div>
+<div class="formula">β = I꜀/Iᵦ</div>
+<div class="formula">β = α/(1-α)</div>
+<div class="formula">α = β/(1+β)</div>
+
+<h3>Logic Gates</h3>
+<div class="formula">AND: Y = A·B</div>
+<div class="formula">OR: Y = A+B</div>
+<div class="formula">NOT: Y = A̅</div>
+<div class="formula">NAND = NOT(AND)</div>
+<div class="formula">NOR = NOT(OR)</div>
+
+<div class="note">NAND and NOR are universal gates.</div>
+
+</div>
+</div>
+
+
+<!-- 15 -->
+<div class="chapter">
+<button onclick="toggle(this)">15. Communication Systems — Quick Revision</button>
+<div class="content">
+
+<h3>Basic Relations</h3>
+<div class="formula">Modulation index (AM): μ = Aₘ/A꜀</div>
+<div class="formula">Bandwidth of AM = 2fₘ</div>
+<div class="formula">Total power: Pₜ = P꜀(1+μ²/2)</div>
+
+<h3>Antenna</h3>
+<div class="formula">Antenna height ≈ λ/4 for simple quarter-wave antenna</div>
+
+<h3>Propagation</h3>
+<div class="formula">c = fλ</div>
+
+</div>
+</div>
+
+
+<!-- CONSTANTS -->
+<div class="chapter">
+<button onclick="toggle(this)">⭐ Important Physics Constants</button>
+<div class="content">
+
+<div class="formula">c = 3×10⁸ m/s</div>
+<div class="formula">h = 6.626×10⁻³⁴ J s</div>
+<div class="formula">e = 1.602×10⁻¹⁹ C</div>
+<div class="formula">ε₀ = 8.854×10⁻¹² C²/(N m²)</div>
+<div class="formula">μ₀ = 4π×10⁻⁷ T m/A</div>
+<div class="formula">G = 6.674×10⁻¹¹ N m²/kg²</div>
+<div class="formula">mₑ = 9.11×10⁻³¹ kg</div>
+<div class="formula">mₚ = 1.67×10⁻²⁷ kg</div>
+<div class="formula">1 eV = 1.602×10⁻¹⁹ J</div>
+<div class="formula">1 Å = 10⁻¹⁰ m</div>
+<div class="formula">1 fm = 10⁻¹⁵ m</div>
+<div class="formula">D = 25 cm</div>
+<div class="formula">g ≈ 9.8 m/s²</div>
+
+</div>
+</div>
+
+
+<script>
+function toggle(btn){
+  btn.nextElementSibling.classList.toggle("show");
+}
+
+function openAll(){
+  document.querySelectorAll(".content")
+    .forEach(x=>x.classList.add("show"));
+}
+
+function closeAll(){
+  document.querySelectorAll(".content")
+    .forEach(x=>x.classList.remove("show"));
+}
+</script>
+
+</body>
+</html>
+```
